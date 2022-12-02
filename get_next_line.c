@@ -18,7 +18,7 @@ char	*read_and_save(int fd, char *str)
 	int		read_bytes;
 
 	if (!str)
-		str = calloc(1, 1);
+		return NULL;
 	read_bytes = 1;
 	while (!ft_strchr(str, '\n') && read_bytes != 0)
 	{
